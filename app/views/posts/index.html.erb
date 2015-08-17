@@ -1,0 +1,16 @@
+<h1>List of all Jobs</h1>
+
+<% @posts.each do |post| %>
+  <div>
+    <%= post.url %>
+    <%= post.employer_name %>
+    <%= post.employer_description %>
+    <%= post.job_title %>
+    <%= post.job_description %>
+    <%= post.year_of_experience %>
+    <%= post.education_requirement %>
+    <%= post.industry %>
+    <%= post.base_salary %>
+    <%= post.employment_type_id %>
+  </div>
+<% end %>
